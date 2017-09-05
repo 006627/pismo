@@ -1,0 +1,29 @@
+[
+    {
+        "Transaction_ID":1,
+        "Account_ID" : 1,
+        "OperationType_ID" : 3,
+        "Amount": -50.0,
+        "Balance": -50.0,
+        "EventDate": {$date:"2017-04-05T04:57:00.853Z"},
+        "DueDate": {$date:"2017-05-10T04:57:00.853Z"}
+    },
+    {
+        "Transaction_ID":2,
+        "Account_ID" : 1,
+        "OperationType_ID" : 1,
+        "Amount": -23.5,
+        "Balance": -23.5,
+        "EventDate": {$date:"2017-04-10T04:57:00.853Z"},
+        "DueDate": {$date:"2017-05-10T04:57:00.853Z"}
+    },
+    {
+        "Transaction_ID":3,
+        "Account_ID" : 1,
+        "OperationType_ID" : 1,
+        "Amount": -18.7,
+        "Balance": -18.7,
+        "EventDate": {$date:"2017-04-30T04:57:00.853Z"},
+        "DueDate": {$date:"2017-06-10T04:57:00.853Z"}
+    }
+]

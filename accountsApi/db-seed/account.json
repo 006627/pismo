@@ -1,0 +1,12 @@
+[
+    {
+        "Account_ID":1,
+        "AvailableCreditLimit" : 5000.0,
+        "AvailableWithdrawalLimit" : 5000.0
+    },
+    {
+        "Account_ID":2,
+        "AvailableCreditLimit" : 500.0,
+        "AvailableWithdrawalLimit" : 50.0
+    }
+]

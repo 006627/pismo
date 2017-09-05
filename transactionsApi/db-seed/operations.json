@@ -1,0 +1,22 @@
+[
+    {
+        "OperationType_ID":1,
+        "Description":"COMPRA A VISTA",
+        "ChargeOrder":2
+    },
+    {
+        "OperationType_ID":2,
+        "Description":"COMPRA PARCELADA",
+        "ChargeOrder":1
+    },
+    {
+        "OperationType_ID":3,
+        "Description":"SAQUE",
+        "ChargeOrder":0
+    },
+    {
+        "OperationType_ID":4,
+        "Description":"PAGAMENTO",
+        "ChargeOrder":0
+    }
+]

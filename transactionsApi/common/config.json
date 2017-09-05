@@ -1,0 +1,8 @@
+{
+    "Server"    :"0.0.0.0:8000",
+    "Host"        : "host.accounts",
+    "MongoDBHost" : "db",
+    "MongoDBUser" : "",
+    "MongoDBPwd"  : "",
+    "Database"    : "pismo-transactions"
+}

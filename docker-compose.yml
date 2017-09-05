@@ -1,0 +1,48 @@
+version: '3'
+services:
+  accounts:
+    build: ./accountsApi
+    image: pismo/accounts
+    container_name: pismo-accounts
+    ports:
+      - "8080:8080"
+    links:
+      - db
+    depends_on:
+      - db
+  transactions:
+    build: ./transactionsApi
+    image: pismo/transactions
+    container_name: pismo-transactions
+    ports:
+      - "8000:8000"
+    links:
+      - accounts:host.accounts
+      - db
+    depends_on:
+      - accounts
+      - db
+  db:
+    image: mongo:3.3
+    container_name: pismo-db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data:/data
+    command: mongod --smallfiles --logpath=/dev/null
+  db-account:
+    build: ./accountsApi/db-seed
+    depends_on:
+      - db
+    links:
+      - db
+  db-transaction:
+    build: ./transactionsApi/db-seed
+    depends_on:
+      - db
+    links:
+      - db
+
